@@ -1,1 +1,1 @@
-This is a project for Kompiuteriu architektūra 1 kursas
+This is a project for Kompiuterių architektūra 1 kursas
