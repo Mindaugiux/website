@@ -1,0 +1,98 @@
+/* General Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1d1d1d; /* Movie theater dark background */
+    color: #f5f5f5;
+}
+
+header {
+    background: linear-gradient(to right, #e60000, #1d1d1d); /* Cinematic red-to-dark gradient */
+    color: #f5f5f5;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-family: 'Impact', sans-serif;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+.container {
+    width: 90%;
+    margin: 20px auto;
+    background-color: #292929; /* Content box with dark theme */
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8);
+    text-align: center;
+    position: relative;
+}
+
+/* Reel Styling */
+.reel {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    font-size: 2em;
+    line-height: 80px;
+    text-align: center;
+    margin: 10px;
+    border: 3px solid #f3de1d;
+    border-radius: 10px;
+    background: radial-gradient(circle, #ff0000, #800000);
+    color: #fff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.6);
+    transition: all 0.2s ease-in-out;
+}
+
+/* Button Styling */
+button {
+    padding: 15px 30px;
+    font-size: 1.5em;
+    color: #fff;
+    background-color: #e60000;
+    border: none;
+    cursor: pointer;
+    margin: 15px 5px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    transform: scale(1.1);
+    background-color: #ff1a1a;
+    text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.8);
+}
+
+/* Go Back Link */
+a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #f3de1d;
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 1.2em;
+    text-align: center;
+    margin-top: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+a:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 10px rgba(243, 222, 29, 0.6);
+}
+
+/* Spin Animation */
+.spin-animation {
+    animation: spinEffect 0.1s linear infinite;
+}
+
+@keyframes spinEffect {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(10px); }
+    100% { transform: translateY(0); }
+}

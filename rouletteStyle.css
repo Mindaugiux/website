@@ -1,0 +1,145 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1d;
+    color: #f4f4f4;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.movie-header {
+    background: linear-gradient(to right, #333333, #222222);
+    padding: 20px;
+    color: #f4f4f4;
+}
+
+.movie-title {
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.container {
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+}
+
+.subtitle {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.roulette-container {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    margin: 20px auto;
+}
+
+.movie-roulette-wheel {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    position: relative;
+    background: radial-gradient(circle, #444, #222);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    transform: rotate(0deg);
+    transition: transform 3s cubic-bezier(0.17, 0.67, 0.83, 0.67); /* Smooth spinning */
+}
+
+.wheel-section {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+.red {
+    background-color: black;
+    transform: rotate(0deg);
+}
+
+.black {
+    background-color: red;
+    transform: rotate(120deg);
+}
+
+.green {
+    background-color: green;
+    transform: rotate(240deg);
+}
+
+.roulette-indicator {
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 20px;
+    background-color: gold;
+    border: 2px solid #000;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(255, 255, 0, 0.8);
+    z-index: 10;
+}
+
+.movie-label {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.movie-input {
+    padding: 10px;
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+.button-container {
+    margin: 20px 0;
+}
+
+.movie-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.red-button {
+    background-color: #e74c3c;
+    color: #fff;
+}
+
+.black-button {
+    background-color: #34495e;
+    color: #fff;
+}
+
+.green-button {
+    background-color: #27ae60;
+    color: #fff;
+}
+
+.movie-roll-button {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    background-color: #f39c12;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.movie-result {
+    font-size: 1.2rem;
+    margin: 20px 0;
+}
+
+.movie-balance {
+    font-size: 1.5rem;
+    margin: 20px 0;
+}

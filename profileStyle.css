@@ -1,0 +1,106 @@
+/* Basic reset and layout */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Kode Mono", monospace;
+    background-color: #000;
+    color: #FFF;
+    background-image: url('menuback.jpg');
+    background-size: cover;
+    background-position: top;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    text-align: center;
+    color: #F3DE1D;
+    font-size: 2em;
+    font-family: fantasy;
+}
+
+.top-menu h1 {
+    margin: 0;
+}
+
+/* Container for the profile stats */
+.container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#balance, #nextPress {
+    font-size: 1.5em;
+    color: #F3DE1D;
+    font-family: fantasy;
+}
+
+button {
+    padding: 15px 25px;
+    font-size: 1.2em;
+    color: #000; /* Text color set to black */
+    background-color: #F3DE1D;
+    border: none;
+    cursor: pointer;
+    font-family: fantasy;
+    margin: 10px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+/* Hover effect for buttons */
+button:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+    text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5), 0px 0px 12px rgba(255, 251, 3, 0.8);
+}
+
+/* Back to menu button styling */
+#backToMenuButton {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    background-color: #F3DE1D;
+    color: #000;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: fantasy;
+    z-index: 1000; /* Ensure it stays above other content */
+    transition: all 0.3s ease;
+}
+
+/* Hover effect for back button */
+#backToMenuButton:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+    text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5), 0px 0px 12px rgba(255, 251, 3, 0.8);
+}
+
+.lower-menu {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #000;
+    color: #FFF;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Small devices: make everything fit nicely on small screens */
+@media (max-width: 600px) {
+    .container {
+        margin-top: 30px;
+    }
+
+    #balance, #nextPress, button {
+        font-size: 1.2em;
+    }
+
+    #backToMenuButton {
+        top: 10px;
+        right: 10px;
+    }
+}

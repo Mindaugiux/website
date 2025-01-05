@@ -1,0 +1,134 @@
+/* General Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    background-color: #0c0c0c; /* Movie theater dark */
+    color: #ffffff;
+    height: 100%;
+}
+
+/* Container Styling */
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    background: linear-gradient(145deg, #1f1f1f, #0d0d0d);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #444; /* Subtle reel effect */
+    position: relative;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Header Styling */
+h1.form-title {
+    font-family: 'Courier New', Courier, monospace; /* Typewriter/movie subtitle style */
+    font-size: 2rem;
+    color: #e6d811; /* Marquee yellow */
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+
+.input-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-group i {
+    position: absolute;
+    left: 10px;
+    top: 38%; /* Adjusted to move the icon slightly up */
+    transform: translateY(-50%);
+    color: #aaa;
+    font-size: 1.2rem;
+}
+
+.input-group input {
+    width: calc(100%); /* Adjust width to account for padding and icon */
+    padding: 10px 10px 10px 40px; /* Left padding for icon */
+    background: #161616;
+    border: 1px solid #333;
+    border-radius: 5px;
+    color: #fff;
+    outline: none;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    box-sizing: border-box; /* Ensure padding and borders are included in width */
+}
+
+.input-group input:focus {
+    border-color: #e6d811;
+    background: #1d1d1d;
+    box-shadow: 0 0 8px #e6d811;
+}
+
+.input-group label {
+    display: block;
+    margin-top: 5px;
+    font-size: 0.8rem;
+    color: #bbb;
+}
+
+/* Button Styling */
+.btn {
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+    background: linear-gradient(145deg, #e6d811, #d4c40d);
+    color: #0c0c0c;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background: #ffd700;
+    box-shadow: 0 0 8px #ffd700;
+}
+
+/* Links Section */
+.links {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.links p {
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+.links button {
+    background: none;
+    color: #e6d811;
+    border: 1px solid #e6d811;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.links button:hover {
+    background: #e6d811;
+    color: #0c0c0c;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
